@@ -1,4 +1,4 @@
-# HTL Rennweg Diplomarbeits Vorlage
+# HTL Rennweg Diplomarbeitsvorlage
 
 > [!IMPORTANT]
 > If you are not a student of HTL Rennweg, this template will be of little use to you.
@@ -37,11 +37,7 @@ To adhere to the official style of the book, all template options should be set 
   print-ref: true,
   generative-ai-clause: none,
   abbreviation: yaml("abbr.yml"),
-  bibliography: bibliography(
-    "refs.yml",
-    full: true,
-    title: [Literaturverzeichnis],
-  ),
+  bibliography-content: bibliography("refs.yml", title: [Literaturverzeichnis])
 )
 ```
 
@@ -54,9 +50,9 @@ The Justfile provides useful recipes for installation/development.
 
 The basic setup is as follows:
 
-```
-$ git clone https://github.com/HTL3R-Typst/htl3r-da
-$ just install-preview # to install into the "preview" namespace
+```bash
+git clone https://github.com/HTL3R-Typst/htl3r-da
+just install-preview # to install into the "preview" namespace
 ```
 
 Now you are able to compile documents using the template system-wide.

@@ -3,6 +3,7 @@
 .zed
 
 tests/doc/test.pdf
+template/main.pdf
 
 # REMOVE THIS IN FINAL VERSION
 tests/**/out

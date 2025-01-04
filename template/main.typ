@@ -24,11 +24,7 @@
   print-ref: true,
   generative-ai-clause: none,
   abbreviation: yaml("abbr.yml"),
-  bibliography: bibliography(
-    "refs.yml",
-    full: true,
-    title: [Literaturverzeichnis],
-  ),
+  bibliography-content: bibliography("refs.yml", title: [Literaturverzeichnis])
 )
 
 #include "chapter/example.typ"
